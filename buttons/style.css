@@ -7,6 +7,18 @@
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
+  transition: opacity 0.15s;
+  margin-left: 8px;
+}
+
+.youtube:hover {
+  opacity: 0.8;
+  border: none;
+}
+
+.youtube:active {
+  opacity: 0.5;
+  border: none;
 }
 
 .white {
@@ -20,6 +32,16 @@
   border-style: solid;
   border-width: 1px;
   margin-right: 8px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.white:hover {
+  background-color: rgb(0, 90, 192);
+  color: white;
+}
+
+.white:active {
+  opacity: 0.7;
 }
 
 .twitter {
@@ -32,6 +54,11 @@
   cursor: pointer;
   font-weight: bold;
   font-size: 15px;
+  transition: box-shadow 0.15s;
+}
+
+.twitter:hover {
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
 }
 
 .uber {
