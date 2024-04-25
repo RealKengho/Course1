@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Clone</title>
-    <link rel="stylesheet" href="youtube.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="sidebar.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +19,77 @@
 
 
   <body>
-    <input class="search-bar" type="text" placeholder="Search">
+    
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="sidebar">
+        <img class="youtube-logo" src="icons/youtube-logo.svg" alt="youtube-logo">
+      </div>
+      
+      
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" alt="search button">
+          <div class="tooltip">Search</div>
+        </button>
+
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="voice search button">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+
+
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" alt="upload icon">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="youtube apps">
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" alt="notifications">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="current-user-picture" src="pfps/my-channel.jpeg" alt="my-channel">
+      </div>
+    </div>
+
+
+
+      <div class="sidebar" >
+        <div class="sidebar-link">
+          <img src="icons/home.svg" alt="Home">
+          <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="icons/explore.svg" alt="Explore">
+          <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="icons/subscriptions.svg" alt="Subscriptions">
+          <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="icons/originals.svg" alt="Originals">
+          <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="icons/youtube-music.svg" alt="Youtube Music">
+          <div>Youtube Music</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="icons/library.svg" alt="Library">
+          <div>Library</div>
+        </div>
+
+      </div>
+
 
     <div class="video-grid">
       
@@ -24,6 +97,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="Marques Brownlee"> 
+          <div class="video-time">14:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -48,7 +122,8 @@
       
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Markiplier"> 
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Markiplier">
+          <div class="video-time">8:22</div> 
         </div>
         
         <div class="video-info-grid">
@@ -73,7 +148,8 @@
       
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="SSSniperWolf"> 
+          <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="SSSniperWolf">
+          <div class="video-time">9:13</div> 
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -98,7 +174,8 @@
       
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="Veritasium"> 
+          <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="Veritasium">
+          <div class="video-time">22:09</div> 
         </div>
         
         <div class="video-info-grid">
@@ -123,7 +200,8 @@
       
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="CS Dojo"> 
+          <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="CS Dojo">
+          <div class="video-time">11:17</div> 
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -148,7 +226,8 @@
       
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="MrBeast"> 
+          <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="MrBeast">
+          <div class="video-time">19:59</div> 
         </div>
         
         <div class="video-info-grid">
